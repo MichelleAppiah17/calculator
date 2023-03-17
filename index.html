@@ -7,27 +7,24 @@
 <body>
 
     <div class="calculator-grid">
-        <div class="screen">
-            <div class="calculations">yes</div>
-            <div class="answer">no</div>
-        </div>
+        <input type="text" id="screen" disabled>
             <button class="clear">clear</button>
             <button class="delete">del</button>
-            <button class="divide">/</button>
-            <button class="number-7">7</button>
-            <button class="number-8">8</button>
-            <button class="number-9">9</button>
-            <button class="multiply">x</button>
-            <button class="number-4">4</button>
-            <button class="number-5">5</button>
-            <button class="number-6">6</button>
-            <button class="minus">-</button>
-            <button class="number-1">1</button>
-            <button class="number-2">2</button>
-            <button class="number-3">3</button>
-            <button class="add">+</button>
-            <button class="number-0">0</button>
-            <button class="decimal">.</button>
-            <button class="equals">=</button>
+            <button onclick="addValue('/')">/</button>
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="addValue('*')">*</button>
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button onclick="addValue('-')">-</button>
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button onclick="addValue('+')">+</button>
+            <button onclick="addValue('0')">0</button>
+            <button onclick="addValue('.')">.</button>
+            <button class="equals" onclick="addValue('=')">=</button>
     </div>
 </body>
